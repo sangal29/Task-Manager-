@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+#container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #c3f5c1, #c3b8f5, #f5c3eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Task Tracker Box */
+.box {
+    width: 50%;
+    min-width: 400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Input Section */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#addText {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+#add {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#add:hover {
+    background-color: #45a049;
+}
+
+img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Task List Container */
+#box2 {
+    max-height: 300px; /* Makes the task list scrollable */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Task List Items */
+#list-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px; /* Adds inner spacing */
+    margin-bottom: 10px;
+    background: #ffffff; /* Solid white background */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+    cursor: pointer;
+}
+
+#list-container li.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#list-container li span {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#list-container li:hover {
+    background-color: #f1f1f1;
+}
